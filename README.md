@@ -1,4 +1,4 @@
-# Master thesis entitled: "Factors influencing stock option returns: On the Relevance of Systematic and Idiosyncratic Volatility."
+# Factors influencing stock option returns: On the Relevance of Systematic and Idiosyncratic Volatility
 
  [Description]: 
  The classic hedging strategy for options is delta hedging. Here, the option is hedged against changes in the price of the underlying asset by means of an offsetting position in the underlying asset. In the context of the Black-Scholes model, such a strategy has a discounted expected value of zero, e.g. if the position in the underlying is adjusted daily.
