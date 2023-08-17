@@ -27,13 +27,13 @@ The code is structured as follows:
     - 2 Save results in new pandasDataFrame 'delta_gain_returns'
     #### III. Calculate Idiosyncratic Stock Volatility
     - 1 Import and merge stock data from .xlsx files as pandasDataFrame 'stock_data'
-    - 2 Calculate for each OptionID the volatility and standard deviation for the underlying stock (-60 to -30 days before maturity) and split it into idiosyncratic and systematic volatility
+    - 2 Calculate for each OptionID the volatility, measured by variance, for the underlying stock (-60 to -30 days before maturity) and split it into idiosyncratic and systematic volatility. Idiosyncratic volatility is calculated as the variance of the residuals of the Fama-French 1-factor model. Systematic volatility is calculated as the difference between volatility and idiosyncratic volatility.
     - 3 Save results in new pandasDataFrame 'final_dataset'
     #### IV. Fama-MacBeth-Regression
-    - 1 Calculate descriptive statistics for the final_dataset
+    - 1 Calculate descriptive statistics for the 'final_dataset'
     - 2 Calculate regression of the delta-gain-hedge return (dependend variable) on the idiosyncratic volatility and the systematic volatility (independent variables).
     #### V. Appendix
-    - 1 Descriptive statistics for final_dataset sorted by idiosyncratic volatility (top and bottom 20%)
+    - 1 Descriptive statistics for 'final_dataset' sorted by idiosyncratic volatility (top and bottom 20%)
     - 2 Regression with delta-gain-hedge return (dependend variable) on the volatility measured by variance/standard deviation (independent variables).
     - 3 Regression with delta-gain-hedge return (dependend variable) on the idiosyncratic volatility and the systematic volatility (independent variables). Difference to IV (2): This time we use the standard deviation as volatility measure instead of the variance. Additionally we use the same definition of systematic volatility as in the paper [3]. This means, that also the idiosyncratic volatility is calculated differently (residuals in 3-factor model instead of 1-factor).
 - `master_functions.py`: Contains all functions used in the main file
