@@ -7,7 +7,7 @@ Empirically, it has been shown that such a hedging strategy generates a loss on 
 
 In reality, volatility fluctuates, so that the seller of an option bears the risk of increasing volatility of the underlying. Thus, the negative returns can be interpreted as a volatility risk premium paid by the buyer to the seller for taking on the volatility risk. For options on single stocks, the volatility of the underlying can be divided into a systematic and an idiosyncratic component by means of a corresponding factor model [3].
 
-In the course of this paper, the empirical analysis of the cross-section of delta-neutral option returns will be used to investigate the extent to which the volatility risk premium is driven by the two components. In addition, a further breakdown of systematic volatility can be made with respect to systematic risk factors.
+In this project, the empirical analysis of the cross-section of delta-neutral option returns will be used to investigate the extent to which the volatility risk premium is driven by the two components. In addition, a further breakdown of systematic volatility can be made with respect to systematic risk factors.
 
 [1] Black und Scholes (1973): The Pricing of Options and Corporate Liabilities, The Journal of Political Eco- nomy, Jg. 81, S. 637-654.
 
@@ -20,6 +20,7 @@ In the course of this paper, the empirical analysis of the cross-section of delt
 The code is structured as follows:
 
 - `main.ipynb`: The main file to run the code. It is divided into the following sections:
+
     - I. Import and transoform option data:
         - 1 Import and merge option data from .xlsx files as pandasDataFrame 'option_data'
         - 2 Transform stikeprice
