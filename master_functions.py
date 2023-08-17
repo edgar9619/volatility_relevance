@@ -170,7 +170,7 @@ def calculate_volatilitys(option_data,stock_data):
     option_data['idiosyncratic_volatility'] = None
     option_data['systematic_volatility']    = None
     option_data['systematic_part_percent']  = None
-    option_data['stock_data_available']  = False
+    option_data['stock_data_available']     = False
 
     for i in range(len(option_data)):
         security_id = option_data['SecurityID'].iloc[i]
