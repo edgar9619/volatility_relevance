@@ -1,5 +1,5 @@
 """
-Implementing the functions that are used in the main file: "Masterthesis.ipynb"
+Implementing the functions that are used in the main file: "main.ipynb"
 
 """
 import pandas as pd
