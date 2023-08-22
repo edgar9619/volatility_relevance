@@ -239,6 +239,7 @@ def final_regression(option_data,constant):
         results = model.fit()
         risk_premia = pd.DataFrame(results.params)
         print(results.summary())
+        print(results.pvalues)
         print('')
         print("Beta factors with constant:")
     else:
@@ -253,6 +254,7 @@ def final_regression(option_data,constant):
         results = model.fit()
         risk_premia = pd.DataFrame(results.params)
         print(results.summary())
+        print(results.pvalues)
         print('')
         print("Beta factors without constant:")
 
