@@ -259,5 +259,3 @@ def final_regression(option_data,constant):
         print("Beta factors without constant:")
 
     return risk_premia
-
-
